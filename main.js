@@ -1,4 +1,4 @@
-// Animation on scroll
+
 AOS.init({
   duration: 800,
   easing: "slide",
@@ -15,16 +15,16 @@ AOS.init({
     scrollProperty: "scroll",
   });
 
-  //   full height
+  
   var fullHeight = function () {
     $(".js-fullheight").css("height", $(window).height());
     $(window).resize(function () {
       $(".js-fullheight").css("height", $(window).height());
     });
   };
-  fullHeight(); //call that function
+  fullHeight(); 
 
-  // navbar scroll
+  
   var scrollWindow = function () {
     $(window).scroll(function () {
       var $w = $(this),
@@ -66,7 +66,7 @@ AOS.init({
 
   $.Scrollax();
 
-  //   carousel
+ 
   var carousel = function () {
     $(".home-slider").owlCarousel({
       loop: true,
